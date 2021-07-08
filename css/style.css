@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    height: 8vh;
+    min-height: 40px;
+    min-width: 500px;
+    background-color: #A21645;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 2vw;
+}
+
+.search {
+    margin-left: 2vw;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 4vh;
+    width: 30vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#searchbar {
+    padding: 1px 4px;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    min-width: 85%;
+    min-height: 85%;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: transparent;
+    border: 0.5px solid white;
+    border-radius: 6px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 2vw;
+
+    transition: color 0.1s, font-weight 0.1s;
+}
+
+nav ul li a:hover {
+    color: slateblue;
+    font-weight: bold;
+}
+
+.container {
+    box-sizing: border-box;
+
+    color: white;
+    font-size: 1.5rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,84,1) 34%, rgba(199,71,58,1) 100%);
+
+    border: 0.5px solid white;
+}
+
+.background {
+    width: 100vw;
+    height: 60vh;
+    background-image: url("https://source.unsplash.com/2560x960/?shopping,electronics");
+    background-size: cover;
+    background-position: center;
+}
+
+#welcome-message {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.item-list {
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    color: black;
+    width: 90vw;
+    height: 30vh;
+
+    padding: 10px;
+    margin: 10px auto;
+
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.item-category {
+    text-transform: uppercase;
+}
+
+.item-display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100%;
+}
+
+.item-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-info {
+    width: 95%;
+    height: 95%;
+    /* border: 1px solid grey; */
+    padding: 4px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.item-image {
+    min-width: 85%;
+    max-width: 85%;
+    min-height: 70%;
+    max-height: 70%;
+    /* border: 1px solid grey; */
+    border-radius: 4px;
+    align-self: center;
+}
+
+.item-name {
+    margin: 4px 0;
+    font-family: 'Lato', sans-serif;
+    font-stretch: condensed;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.item-price {
+    font-weight: light;
+
+    color: lightslategray;
+}
+
+#see-more-section {
+    margin: 30px 0;
+}
+
+#see-more-button {
+    background-color: transparent;
+    padding: 8px;
+    border: 1px solid white;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: light;
+    color: white;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+footer {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    height: 12vh;
+    /* background-color: #A21645; */
+    background-color: black;
+    color: white;
+    font-weight: 100;
+}
