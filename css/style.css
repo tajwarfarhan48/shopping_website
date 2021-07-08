@@ -46,7 +46,7 @@ nav {
 }
 
 #searchbar {
-    padding: 1px 4px;
+    padding: 1px 10px;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     border-radius: 6px;
@@ -143,6 +143,13 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.item-div:hover {
+    color: slateblue;
+    font-weight: bold;
 }
 
 .item-info {
@@ -185,7 +192,7 @@ nav ul li a:hover {
 
 #see-more-button {
     background-color: transparent;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid white;
 
     font-family: 'Oswald', sans-serif;
@@ -194,7 +201,14 @@ nav ul li a:hover {
     color: white;
     text-transform: uppercase;
 
+    transition: color 0.2s, font-weight 0.2s;
+
     cursor: pointer;
+}
+
+#see-more-button:hover {
+    color: slateblue;
+    font-weight: bold;
 }
 
 footer {
